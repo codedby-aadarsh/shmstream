@@ -10,4 +10,12 @@ Mirrors how a camera driver and web server can share frame data.
 - Two process can share this memory region without any kernel involvment after the setup due to we mmap function to map this region as per the defined structure.
 - The major advantage of this in comparison of the writing the jpeg frame at the tmp location or some known location that it reduce the no disk i/o and its more efficient and way faster than opening and reading the files. 
 
+## Build system 
+- Run the `make` to build, run the `make clean` for clean up of the genrated binaries.
+
+## Instruction to run 
+- After building using make, run the `producer` first in one terminal and  then the `consumer` in the second terminal.
+
+
+
 
